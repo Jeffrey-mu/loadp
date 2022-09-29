@@ -4,6 +4,7 @@
 - Use this script to add a loading box for the picture. When the picture is loaded, display the picture
 
 <img src="./png.gif" width=300 />
+<img src="./before.gif" width=300 />
 
 ## Usage
 - Introduction of script tag src

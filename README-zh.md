@@ -10,8 +10,6 @@
 
 <!--html文件底部使用 或者window.onload 使用-->
 <script>
-    let img = document.getElementsByTagName('img')[0]
-    console.log(img.height)
     // 参数说明
     // height 加载框高度
     // query querySelectorAll 选择器字符串

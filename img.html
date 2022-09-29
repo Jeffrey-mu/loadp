@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片占位符</title>
+  <script src="./ImageLoading.js"></script>
+  <style>
+    ul {
+      display: flex;
+
+    }
+
+    li {
+      width: 400px;
+    }
+
+    .img {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>
+      <h1>hello world</h1>
+      <h2>21实际的机会</h2>
+      <p>21实际的机会21实际的机会21实际的机会21实际的机会</p>
+      <div class="img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Macropus_rufogriseus_rufogriseus_Bruny.jpg"
+          alt="">
+      </div>
+    </li>
+  </ul>
+  <div class="box">
+
+  </div>
+  <script>
+    let img = document.getElementsByTagName('img')[0]
+    console.log(img.height)
+    new ImageLoading().initImageLoading({
+      height: 200, query: 'img'
+    })
+  </script>
+</body>
+
+</html>

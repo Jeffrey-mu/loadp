@@ -13,8 +13,6 @@
 
 <!--Use at the bottom of the html file or window Onload usage-->
 <script>
-    let img = document.getElementsByTagName('img')[0]
-    console.log(img.height)
     // Parameter Description
     // height Loading box height
     // query querySelectorAll Selector String

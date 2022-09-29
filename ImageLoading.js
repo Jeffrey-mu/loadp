@@ -1,5 +1,6 @@
 class ImageLoading {
-  constructor() { }
+  constructor() {
+  }
   initImageLoading({
     height, query, all = true
   }) {

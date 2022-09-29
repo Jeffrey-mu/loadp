@@ -5,18 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>图片占位符</title>
+  <title>Loadp</title>
   <script src="./ImageLoading.js"></script>
   <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
     ul {
       display: flex;
-
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
     }
 
     li {
-      width: 400px;
+      width: 300px;
+      margin: 10px;
     }
-
+    p {
+      height: 40px;
+      margin: 10px 0;
+    }
     .img {
       width: 100%;
       border-radius: 10px;
@@ -32,12 +43,60 @@
 
 <body>
   <ul>
-    <li>
-      <h1>hello world</h1>
-      <h2>21实际的机会</h2>
-      <p>21实际的机会21实际的机会21实际的机会21实际的机会</p>
+     <li>
+      <h1>test loadp</h1>
+      <p>当图片未加载成功 显示加载框</p>
       <div class="img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Macropus_rufogriseus_rufogriseus_Bruny.jpg"
+        <img src="https://images.unsplash.com/photo-1664309793195-163f89f18a45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+          alt="">
+      </div>
+    </li>
+    <li>
+      <h1>test loadp</h1>
+      <p>When the picture is not loaded successfully, the loading box is displayed</p>
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1657299143322-934f44698807?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+          alt="">
+      </div>
+    </li>
+
+    <li>
+      <h1>test loadp</h1>
+      <p>当图片未加载成功 显示加载框</p>
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1664293354612-47f43b09d8c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+          alt="">
+      </div>
+    </li>
+    <li>
+      <h1>test loadp</h1>
+      <p>When the picture is not loaded successfully, the loading box is displayed</p>
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1662581871625-7dbd3ac1ca18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+          alt="">
+      </div>
+    </li>
+    <li>
+      <h1>test loadp</h1>
+      <p>当图片未加载成功 显示加载框</p>
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1664327695978-7b4dcda1e0cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+          alt="">
+      </div>
+    </li>
+    <li>
+      <h1>test loadp</h1>
+      <p>When the picture is not loaded successfully, the loading box is displayed</p>
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1664303167354-6c530671d1d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+          alt="">
+      </div>
+    </li>
+     <li>
+      <h1>test loadp</h1>
+      <p>当图片未加载成功 显示加载框</p>
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1664308542860-19b5b1bba0fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
           alt="">
       </div>
     </li>
@@ -48,10 +107,11 @@
   <script>
     let img = document.getElementsByTagName('img')[0]
     console.log(img.height)
+
     new ImageLoading().initImageLoading({
-      height: 200, query: 'img'
+      height: 500, query: 'ul li img'
     })
   </script>
 </body>
-
 </html>
+

@@ -12,9 +12,14 @@ class ImageLoading {
     array.forEach(element => {
       element.parentElement.classList.add('loading' + height)
       element.style.display = "none"
-      element.onload = () => {
+       if (element.complete) {
         element.style.display = "block"
         element.parentElement.classList.remove('loading' + height)
+      } else {
+        element.onload = () => {
+          element.style.display = "block"
+          element.parentElement.classList.remove('loading' + height)
+        }
       }
     });
   }
